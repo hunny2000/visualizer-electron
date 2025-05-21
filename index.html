@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio Visualizer</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <video src="/public/cat-popcat.mp4" loop muted autoplay></video> -->
+      <canvas id="visualizer"></canvas>
+      <div class="controls hidden">
+        <button id="startAudio">Start</button>
+        <select id="visualizationType">
+          <option value="bars">Bars</option>
+          <option value="wave">Waveform</option>
+          <option value="circle">Circular</option>
+        </select>
+      </div>
+    </div>
+    <script type="module" src="/src/renderer.js"></script>
+  </body>
+</html>

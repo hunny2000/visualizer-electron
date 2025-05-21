@@ -1,0 +1,90 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  app-region: drag;
+}
+
+select,
+button {
+  app-region: no-drag;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  /* filter: blur(100px); */
+  border-radius: 1rem;
+}
+
+canvas {
+  width: 95%;
+  height: 100%;
+  display: block;
+
+  margin: auto 2.5%;
+}
+
+.controls {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  /* transform: translateX(-50%); */
+
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+button,
+select {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover,
+select:hover {
+  background: #45a049;
+}
+
+select {
+  background: #2196f3;
+}
+
+select:hover {
+  background: #1976d2;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* z-index: -1; */
+}
