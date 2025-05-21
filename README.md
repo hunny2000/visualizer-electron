@@ -36,7 +36,7 @@ npm start
 To create a distributable package
 
 ```bash
-npm run mak
+npm run make
 ```
 
 This will create platform-specific installers in the `out` directory.
